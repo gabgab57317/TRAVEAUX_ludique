@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1758292536
+animation_player.gd::GDScript::4037663147826830827::1758291763::0::1::::<>RefCounted<><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1758291763::0::1::::<><><>0<>0<><>::
+node_2d.gd::GDScript::7455048589723365121::1758291763::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::1763989553231553273::1758291763::0::1::::<><><>0<>0<><>::uid://dehjtcus0j41b::::res://node_2d.gd<>uid://dfchg1hqjy1d5::::res://image_anim/masterroshi_1.png<>uid://dk7ol3yosyebt::::res://image_anim/masterroshi_2.png<>uid://m0lw2oi6ho7r::::res://image_anim/masterroshi_3.png<>uid://cxechm2hyj4bj::::res://sound/clover.mp3
+README.md::TextFile::-1::1758291763::0::1::::<><><>0<>0<><>::
+::res://image_anim/::1758291763
+masterroshi_1.png::CompressedTexture2D::7514772135651081212::1758291763::1758292537::1::::<><><>0<>0<>9fe5c22e9618446e7d206dceff67ac3c<>res://.godot/imported/masterroshi_1.png-a866bde2f3c16aba4e930848ba5ac161.ctex::
+masterroshi_2.png::CompressedTexture2D::7928081765611432165::1758291763::1758292537::1::::<><><>0<>0<>bc3cf2e1b472ee127d3802ef7764f9d3<>res://.godot/imported/masterroshi_2.png-d3ca03ae902aec93a6e42b641b765952.ctex::
+masterroshi_3.png::CompressedTexture2D::894584182057139761::1758291763::1758292537::1::::<><><>0<>0<>a4db0bc254dc08d5e1491482919ce72e<>res://.godot/imported/masterroshi_3.png-5657d7fac1eb746cfa123067295a63fb.ctex::
+::res://sound/::1758291763
+clover.mp3::AudioStreamMP3::6395576888960481543::1758291763::1758292537::1::::<><><>0<>0<>294510b02dba8dfad252f47cfe82f9cf<>res://.godot/imported/clover.mp3-d5a21ff81ac9c491a6a70fcb0897f72f.mp3str::
