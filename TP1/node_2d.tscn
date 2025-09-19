@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=3 uid="uid://0eqwdwh5lnmv"]
+
+[ext_resource type="Script" uid="uid://dehjtcus0j41b" path="res://node_2d.gd" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://dfchg1hqjy1d5" path="res://image_anim/masterroshi_1.png" id="1_epypp"]
+[ext_resource type="Texture2D" uid="uid://dk7ol3yosyebt" path="res://image_anim/masterroshi_2.png" id="2_0hol4"]
+[ext_resource type="Texture2D" uid="uid://m0lw2oi6ho7r" path="res://image_anim/masterroshi_3.png" id="3_q6r6c"]
+[ext_resource type="AudioStream" uid="uid://cxechm2hyj4bj" path="res://sound/clover.mp3" id="5_q6r6c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kdubu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_epypp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0hol4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_q6r6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0hol4")
+}],
+"loop": true,
+"name": &"anime_1",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(1.00296, 1)
+script = ExtResource("1_0hol4")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 1150.0
+offset_bottom = 645.0
+color = Color(0, 1, 1, 1)
+
+[node name="anime_1" type="AnimatedSprite2D" parent="."]
+position = Vector2(148.56, 105)
+scale = Vector2(2.78339, 2.79576)
+sprite_frames = SubResource("SpriteFrames_kdubu")
+animation = &"anime_1"
+frame = 1
+frame_progress = 0.326182
+
+[node name="anime_2" type="AnimatedSprite2D" parent="."]
+position = Vector2(562.06, 398.555)
+scale = Vector2(7.74726, 7.81627)
+sprite_frames = SubResource("SpriteFrames_kdubu")
+animation = &"anime_1"
+frame = 1
+frame_progress = 0.690928
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 310.0
+offset_top = 15.0
+offset_right = 430.0
+offset_bottom = 137.0
+text = "play
+1"
+
+[node name="Clover" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_q6r6c")
+
+[node name="Button2" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = -0.264007
+anchor_top = 0.00360263
+anchor_right = -0.264007
+anchor_bottom = 0.00360263
+offset_left = 885.379
+offset_top = 57.0
+offset_right = 1059.38
+offset_bottom = 183.0
+scale = Vector2(0.999932, 0.999932)
+text = "play
+2"
+
+[node name="Clover2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_q6r6c")
+
+[connection signal="toggled" from="Button1" to="." method="_on_button_toggled"]
+[connection signal="toggled" from="Button2" to="." method="_on_button_2_toggled"]
